@@ -1,4 +1,4 @@
-package com.frinhani.cursomc.domain;
+package br.com.cursomc.domain;
 
 import java.io.Serializable;
 
