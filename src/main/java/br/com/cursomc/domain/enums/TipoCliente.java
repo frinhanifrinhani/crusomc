@@ -5,7 +5,7 @@ public enum TipoCliente {
 	PESSOAFISICA(1, "Pessoa Física"),
 	PESSOAJURIDICA(2, "Pessoa Jurídica");
 	
-	private int cod;
+	private Integer cod;
 	private String descricao;
 	
 	private TipoCliente(int cod, String descricao) {
@@ -27,11 +27,11 @@ public enum TipoCliente {
 		}
 		
 		for(TipoCliente tipo : TipoCliente.values()) {
-			if(tipo.equals(tipo.getCod())) {
+			if(cod.equals(tipo.getCod())) {
 				return tipo;
 			}
 		}
-		
+
 		throw new IllegalArgumentException("Id inválido: " + cod);
 	}
 }
