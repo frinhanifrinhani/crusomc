@@ -33,9 +33,6 @@ public class PedidoService {
 	private ProdutoService produtoService;
 	
 	@Autowired
-	private PedidoService  pedidoService;
-	
-	@Autowired
 	private ItemPedidoRepository itemPedidoRepository;
 	
 	public Pedido find(Integer id) {
