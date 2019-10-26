@@ -9,7 +9,7 @@ import br.com.cursomc.domain.Pedido;
 
 public abstract class AbstractMailService implements IEmailService {
 
-	@Value("@{default.sender}")
+	@Value("${default.sender}")
 	private String sender;
 	
 	@Override
